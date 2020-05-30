@@ -1,7 +1,7 @@
 import React from 'react';
 import Group_3 from '../Group 3.svg';
 import axios from 'axios';
-import { withRouter } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 export default class Login extends React.Component {
     state = {
@@ -37,6 +37,7 @@ export default class Login extends React.Component {
     }
     render() {
         return (
+            <React.Fragment>
             <div className="contact" >
                 <h1>Trekker Login</h1>
                 <form onSubmit={this.handleSubmit}>
@@ -48,9 +49,10 @@ export default class Login extends React.Component {
                     <input type="text" password="password" onChange={this.handleChange2}/>
                     <button className="submit-btn" type="submit">Submit</button>
                 </form>
-                <button className="submit-btn" type="submit" >Sign Up?</button>
+                <Link to="/Register">Sign Up?</Link>
                 <img src={Group_3} alt="" />
             </div>
+            </React.Fragment>
         )
     }
 }

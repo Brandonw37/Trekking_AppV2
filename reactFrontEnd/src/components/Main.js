@@ -28,7 +28,7 @@ const Main = () => {
                 <div>
                     <h1>We design &amp; create <br/> trekking trips.</h1>
                     <p>Get away from the hustle and bustle of city life, explore what the nature has to offer. Trekking Team will let you know the destination, packing list. So jet off and explore nature! </p>
-                    <Link to="/contact">Explore now</Link>
+                    <Link to="/Login">Explore now</Link>
                 </div>
                 <img style={{ 
                     width: "100%",

@@ -5,22 +5,26 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ../reactFrontEnd",
+    "dev": "concurrently \"npm run start\" \"npm run client\"",
     "deploy": "gcloud app deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ziyangll/ziyang.git"
+    "url": "git+https://github.com/Brandonw37/Trekking_AppV2.git"
   },
   "author": "Team Hiking",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ziyangll/ziyang/issues"
+    "url": "https://github.com/Brandonw37/Trekking_AppV2/issues"
   },
-  "homepage": "http://trekkingnew.space",
+  "homepage": "https://trekkingspace.space",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.2.0",
     "cookie-parser": "^1.4.5",
     "cookie-session": "^1.4.0",
     "cors": "^2.8.5",
@@ -32,6 +36,7 @@
     "mongoose": "^5.9.15",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
+    "npm": "^6.14.5",
     "passport": "^0.4.1",
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.0"
