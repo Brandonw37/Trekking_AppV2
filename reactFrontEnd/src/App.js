@@ -1,8 +1,6 @@
 import React, { useEffect, useState} from 'react';
-import nature from './nature.jpg';
-import trek from './trek.png';
-//import './App.css';
-import Routes from "./routes";
+import {Routes} from "./routes";
+import Example from "./components/Navigation";
 import { Link, useHistory } from 'react-router-dom';
 
 function App(){
@@ -39,14 +37,16 @@ function App(){
       <div className="container">
         <nav>
           <ul>
-            <li><Link to ="/">Trekker</Link></li>
+            <li>
+              <Example/>
+            </li>
           </ul>
           <ul>
-            {_contact}
           </ul>
         </nav>
         <Routes />
       </div>
+      <footer/>
     </div>
   );
 }

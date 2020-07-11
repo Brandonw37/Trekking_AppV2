@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
-html {
-  background: rgb(229, 238, 220) ;
-}
 
 body {
   margin: 0;
@@ -15,6 +12,7 @@ body {
   background-image: url("./Group\ 3.svg");
   background-position: bottom;
   background-repeat: no-repeat;
+  background-color: rgb(229, 238, 230);
 }
 
 body * {
@@ -25,7 +23,8 @@ body * {
 .container {
   width: 80%;
   margin: 0 auto;
- 
+  max-width: none;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -66,6 +65,7 @@ nav ul:first-of-type li:first-of-type{
 
 header {
   position: relative;
+  font-family: Lato, sans-serif;
 }
 
 
@@ -117,6 +117,7 @@ header div a:hover, .newsletter input[type="submit"]:hover, .submit-btn:hover {
 
 main {
   padding-top: 100px;
+  font-family: Lato, sans-serif;
 }
 
 h2 {
