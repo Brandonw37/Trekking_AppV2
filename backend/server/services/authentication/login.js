@@ -31,12 +31,14 @@ function loginUser (request, response) {
             }
 //check password
            user.comparePassword(password, function (error, isMatch) {
-               if (!error) {
+               if (isMatch && !error) {
+//                   console.log(isMatch)
+//                   console.log(password)
                    var token = jwt.sign(user.toJSON(),db.secret,
                    {
                        expiresIn: 10080
                    });
-                return response.json({
+                return response.send({
                     success: true,
                     token: 'JWT ' + token
                 });

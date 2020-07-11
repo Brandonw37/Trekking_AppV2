@@ -1,7 +1,7 @@
 import React from 'react';
 import Group_3 from '../Group 3.svg';
 import axios from 'axios';
-import { withRouter, useHistory } from 'react-router';
+//import { withRouter, useHistory } from 'react-router';
 
 
 export default class Register extends React.Component {
@@ -27,11 +27,11 @@ export default class Register extends React.Component {
             .then(res => {
                 this.results = res.data
                 console.log(this.results.success)
-                if (this.results.success == true) {
+                if (this.results.success === true) {
                 alert((this.state.email) + ' Thank you for signing up!');
                 console.log(this.state.email);
                 console.log(this.results);
-                this.props.history.push('/Packing');
+                this.props.history.push('/Login');
                 } else {
                     alert(this.results.message);
                 }
